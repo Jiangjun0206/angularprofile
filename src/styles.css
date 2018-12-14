@@ -1,0 +1,82 @@
+/* You can add global styles to this file, and also import other style files */
+@font-face{
+    font-family: 'balqis';
+    src: url('./assets/fonts/Balqis.ttf') format('truetype');
+}
+@font-face{
+    font-family: 'Luciano';
+    src: url('./assets/fonts/Luciano.ttf') format('truetype');
+}
+@font-face{
+    font-family: 'Novar';
+    src: url('./assets/fonts/Novar.ttf') format('truetype');
+}
+@font-face{
+    font-family: 'Fish&Chips';
+    src: url('./assets/fonts/FISH&CHIPS.ttf') format('truetype');
+}
+@font-face{
+    font-family: 'Luna';
+    src: url('./assets/fonts/Luna.ttf') format('truetype');
+}
+@font-face{
+    font-family: 'Dragonfly';
+    src: url('./assets/fonts/Dragonfly.otf') format('opentype');
+}
+@font-face{
+    font-family: 'Magnolia';
+    src: url('./assets/fonts/Magnolia.otf') format('opentype');
+}
+@font-face{
+    font-family: 'IcedTea';
+    src: url('./assets/fonts/IcedTea.otf') format('opentype');
+}
+@font-face{
+    font-family: 'Nouradilla';
+    src: url('./assets/fonts/Nouradilla.ttf') format('truetype');
+}
+@font-face{
+    font-family: 'LoveAndPassion';
+    src: url('./assets/fonts/Love_and_Passion.ttf') format('truetype');
+}
+@font-face{
+    font-family: 'LoversQuarrel';
+    src: url('./assets/fonts/LoversQuarrel-Regular.otf') format('opentype');
+}
+LoversQuarrel-Regular
+.main-body{
+    /*background-image: url('./assets/images/responsive-main-background.jpg'); */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:center;
+}
+.heading-center{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    text-align: center;
+    color:white;
+    }
+html, body{
+    height:100%;
+}
+@media only screen and (min-width: 768px){
+    /* Desktop*/
+    .main-body{
+        /*background-image: url('./assets/images/main-background.jpg'); */
+        background-size: cover;
+        background-position: initial;
+        background-attachment: fixed;
+    }
+    .heading-center{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translateX(-50%) translateY(-50%);
+        text-align: center;
+        color:white;
+    }
+    
+}
+

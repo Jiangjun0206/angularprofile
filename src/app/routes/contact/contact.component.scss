@@ -1,0 +1,17 @@
+.contact-heading{
+    font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+    font: bold; 
+    text-align: center;
+}
+.heading-center{
+    h1{
+        font-family: 'Luciano';
+    }
+}
+@media only screen and (min-width: 768px){
+    .heading-center{
+        h1{
+            font-size: 89px;
+        }
+    }
+ }

@@ -1,0 +1,24 @@
+<nav class="navbar navbar-default navbar-fixed-top">
+    <div class="clearfix">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" (click)="isCollapsed = !isCollapsed" [attr.aria-expanded]="!isCollapsed" aria-controls="nav">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+            <a class="navbar-brand" href><b>PROFILE INFO</b></a>
+        </div>
+        <div class="collapse navbar-collapse" id="nav" [collapse]="isCollapsed">
+            <ul class="nav navbar-nav items">
+                <li role="presentation" class=""><a routerLink="/home" [routerLinkActive]="['active']" (click)="isCollapsed = !isCollapsed">Home</a></li>
+                <!-- <li role="presentation"><a routerLink="/profile" [routerLinkActive]="['active']" (click)="isCollapsed = !isCollapsed">Profile</a></li> -->
+                <li role="presentation"><a routerLink="/contact" [routerLinkActive]="['active']"(click)="isCollapsed = !isCollapsed">Contact</a></li>
+                <li role="presentation"><a routerLink="/social" [routerLinkActive]="['active']"(click)="isCollapsed = !isCollapsed">Portfolio</a></li>
+                <li role="presentation"><a href >Profile</a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href><img src="../assets/images/me.png" width="25%" height="25%">&nbsp; JiangJun</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>

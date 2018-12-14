@@ -1,0 +1,114 @@
+.wrapper.main{
+    background-size: cover;
+    height: 100%;
+}  
+
+@-webkit-keyframes wiggle {
+    0% {transform: rotateZ(2deg);}
+    50% {transform: rotateZ(-2deg);}
+    100% {transform: rotateZ(2deg);}
+}
+
+@mixin iconTransition{
+
+        transition: all 100ms cubic-bezier(0.420, 0.000, 0.580, 1.000); /* ease-in-out */
+}
+
+@mixin wiggler{
+   animation-name: wiggle;
+   animation-duration: .4s;
+   animation-iteration-count: infinite;
+   animation-timing-function: ease;
+}
+
+footer{
+    background-color: rgba(255,255,255,0.7);
+    .wrap {
+        width: 50%;
+        margin: 100px auto;
+        margin-top: .5em;
+        text-align: center;
+    }
+    .social{
+        font-size: 1.1em;
+        height: 50px;
+        overflow:hidden;
+        border-bottom: 1px solid #abc;
+        display: list-item;
+    }
+
+    i{
+        position: relative;
+        top: 30px;
+        margin: 0 10px;
+        @include iconTransition;
+
+        &:hover{
+            top: 5px; 
+        }
+    }
+    .fb{
+        color: #3B5998;
+    }
+    .tw{
+        color: #09AEEC;
+    }
+    .ig{
+        color: #AA2A25;
+    }
+    .dr{
+        color: #ea4c89;
+    }
+    .sk{
+        color: #00A5E6;
+    }
+    .db{
+        color: #000;
+    }
+    .apple{
+        color: #ccc;
+    }
+}
+
+
+@media only screen and (min-width: 768px){
+    *, *::before, *::after{
+        box-sizing: border-box; 
+        -webkit-box-sizing: border-box; 
+        -moz-box-sizing: border-box; 
+        -o-box-sizing: border-box;  
+    }
+    .wrapper-main{
+        background-attachment: fixed;
+    } 
+
+    footer{
+        background-color: rgba(255,255,255,0.7);
+        .wrap {
+            width: 35%;
+            margin: 100px auto;
+            margin-top: .5em;
+            margin-bottom: 2em;
+            text-align: center;
+        }
+
+        .social{
+            font-size: 2.5em;
+            height: 50px;
+            overflow:hidden;
+            border-bottom: 1px solid #abc;
+            display: list-item;
+        }
+
+        i{
+            position: relative;
+            top: 30px;
+            margin: 0 10px;
+            @include iconTransition;
+
+            &:hover{
+                top: 5px; 
+            }
+        }
+    }
+}

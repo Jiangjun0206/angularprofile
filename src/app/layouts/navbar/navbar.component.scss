@@ -1,0 +1,44 @@
+@media only screen and (min-width: 768px){
+    /* desktop */
+    nav {
+        width:100%;
+        margin:0 auto;
+        list-style:none;
+        position: fixed;
+         top:0;    
+        .nav{
+            width:auto;
+            display: inline-block;
+            
+        }
+        .nav.items{
+            position: absolute;
+        }    
+        li {
+            float:left;
+            width:15%;
+        }
+        a {
+            display:block;
+            text-align:center;
+            font: bold 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif ;
+            width:130px; /* fixed width */
+            text-decoration:none; 
+            color:#484848;
+        }
+        .items > li > a:hover{
+            border-bottom: 2px solid gray;
+            color: gray;
+        }
+        li.a.active{
+            border-bottom: solid light lightgray;
+        }
+    }
+    .navbar{
+        border-radius: 0px;
+    }  
+}
+.navbar-default {
+    background-color: rgba(255,255,255,0.7);
+       
+}
